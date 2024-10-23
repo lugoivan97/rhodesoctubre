@@ -9,21 +9,31 @@
 <body>
     <header>
         <h1>RHODES</h1>
-        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button> <!-- Botón hamburguesa -->
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
         <nav class="menu">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Contactanos</a></li>
             </ul>
         </nav>
     </header>
-    <div class="seccion-menu">
 
+    <!-- Sección central con el menú de hamburguesas -->
+    <div class="section-central">
+        <h2>Menú de Hamburguesas</h2>
+        <!-- Aquí se mostrarán las hamburguesas con JavaScript -->
     </div>
+
+    <!-- Botón para enviar el pedido por WhatsApp -->
+    <div class="enviar-pedido">
+        <button onclick="enviarPedidoWhatsApp()">Enviar Pedido por WhatsApp</button>
+    </div>
+
     <footer>
         Todos los derechos reservados
     </footer>
-    <script src="../js/scripts.js"></script> <!-- Archivo JavaScript -->
+
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
