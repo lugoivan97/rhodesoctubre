@@ -1,0 +1,108 @@
+/* Estilos generales para el body */
+body {
+    background-image: url(../img/wooden-classic-lumber-vertical-timber.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+/* Estilo para el header */
+/* Estilos para el header con fondo transparente */
+header {
+    background-color: rgba(255, 235, 205, 0.8); /* Color de fondo con transparencia */
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+
+/* Estilo del botón de menú hamburguesa */
+.menu-toggle {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Oculta el menú por defecto en móviles */
+.menu {
+    display: none;
+}
+
+/* Estilo del menú cuando está activo en móviles */
+.menu.active {
+    display: block;
+    text-align: center;
+}
+
+/* Estilo para pantallas grandes */
+@media (min-width: 769px) {
+    .menu {
+        display: block;
+    }
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    .menu ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    .menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease;
+    }
+    .menu ul li a:hover {
+        background-color: #f0f0f0;
+        border-radius: 5px;
+    }
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    .menu ul li {
+        margin: 10px 0;
+    }
+    .menu ul li a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+/* Estilo para la sección central */
+.seccion-menu {
+    background-color: rgba(139, 69, 19, 0.8); /* Marrón oscuro con transparencia */
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 80%; /* Para limitar el ancho de la sección */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+/* Estilo para el footer */
+footer {
+    color: beige;
+    background-color: rgb(19, 17, 17);
+    padding: 20px;
+    text-align: center;
+}
